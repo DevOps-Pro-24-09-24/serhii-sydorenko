@@ -1,0 +1,28 @@
+repos:
+#    basic black check
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+    -   id: black
+
+#     pylint check
+-   repo: https://github.com/pycqa/pylint
+    rev: v3.3.0
+    hooks:
+    -   id: pylint
+
+#     check commit message pattern
+-   repo: local
+    hooks:
+    -   id: message-pattern
+        name: check for naming contains `DJ-XXXX:`
+        language: pygrep
+        entry: '\A(?!DJ-XXXX:-[0-9]+)'
+        args: [--multiline]
+        stages: [commit-msg]
