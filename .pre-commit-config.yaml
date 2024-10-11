@@ -19,10 +19,10 @@ repos:
 
 
 
-#- repo: local
-#  hooks:
-#    - id: commit-msg-pattern
-#      name: Commit message must include DJ-XXXXXX pattern
-#      entry: bash ./check-commit-message.sh
-#      language: system
-#      stages: [commit-msg]
+- repo: local
+  hooks:
+    - id: commit-msg-pattern
+      name: Commit message must include DJ-XXXXXX pattern
+      entry: bash ./check-commit-message.sh
+      language: system
+      stages: [commit-msg]
