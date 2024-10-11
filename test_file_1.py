@@ -1,7 +1,6 @@
 # import re
 
 
-def some_mess_up_code():
-    # some_value = "value one"
-    # extra_indent_valie = "22"
-    ...
+def function_with_messed_up_code(any_value: str):
+    extra_indent_value = any_value
+    return extra_indent_value
