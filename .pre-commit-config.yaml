@@ -17,9 +17,9 @@ repos:
     hooks:
     -   id: pylint
 
-- repo: https://github.com/jorisroovers/gitlint
-  rev: v0.19.1  # You can update this to the latest version
-  hooks:
+-   repo: https://github.com/jorisroovers/gitlint
+    rev: v0.19.1  # You can update this to the latest version
+    hooks:
     - id: gitlint
       stages: [commit-msg]
       args:
