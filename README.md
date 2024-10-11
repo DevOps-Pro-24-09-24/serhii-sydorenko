@@ -4,7 +4,7 @@
 
 * added Black code formater
 * added pylint check with config in .pylintrc
-* added regex pattern check for commit-message to be 'DJ-XXXXXX'
+* added regex pattern check for commit-message to be 'DJ-XXXXXX:AAAAAA'
 
 ### install guide
 
