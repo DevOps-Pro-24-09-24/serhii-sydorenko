@@ -17,15 +17,12 @@ repos:
     hooks:
     -   id: pylint
 
--   repo: https://github.com/jorisroovers/gitlint
-    rev: v0.19.1  # You can update this to the latest version
-    hooks:
-    - id: gitlint
-      stages: [commit-msg]
-      args:
-        - --extra-line-rule
-        - "T1^Commit message must start with 'DJ-' followed by 6 digits"
-        - --ignore-by-default
-        - "body"  # If you want to ignore other checks
-        - --regex
-        - "^DJ-[0-9]{6}"
+
+
+#- repo: local
+#  hooks:
+#    - id: commit-msg-pattern
+#      name: Commit message must include DJ-XXXXXX pattern
+#      entry: bash ./check-commit-message.sh
+#      language: system
+#      stages: [commit-msg]
